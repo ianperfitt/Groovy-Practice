@@ -80,9 +80,16 @@ class GroovyTut {
     printf("A %s string \n", randString);
     print("Whats your name");
     def fName = "";
-    fName = System.console().readLine();
+    //fName = System.console().readLine();
     println("Hello " + fName);
 
     // lists
+    def primes = [2,3,5,7,11,13];
+    println("2nd Prime " + primes[1]);
+    println("2nd Prime " + primes.get(2));
+
+    def employee = ['Derek', 40, 6.25, [1,2,3]];
+
+    println("2nd Number " + employee[3][1]);
   }
 }
