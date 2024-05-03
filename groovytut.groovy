@@ -74,6 +74,15 @@ class GroovyTut {
     println("Ian == Ian " + 'Ian'.equals('Ian'));
     println("Ian == Ian " + 'Ian'.equalsIgnoreCase('ian'));
  
-    
+    // string input and output
+    def randString = "Random";
+    println("A $randString string");
+    printf("A %s string \n", randString);
+    print("Whats your name");
+    def fName = "";
+    fName = System.console().readLine();
+    println("Hello " + fName);
+
+    // lists
   }
 }
