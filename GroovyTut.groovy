@@ -112,9 +112,19 @@ class GroovyTut {
     //range
     def oneTo10 = 1..10;
     def aToZ = 'a'..'z';
-
     println(aToZ);
-    ptintln("Get First " + oneTo10.getFrom());
+    println("Get First " + oneTo10.getFrom());
+
+    // looping
+
+    def i = 0;
+
+    while(i < 10) {
+      if(i % 2) {
+        i++;
+        continue;
+      }
+    }
 
 
 
