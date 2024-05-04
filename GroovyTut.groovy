@@ -95,5 +95,21 @@ class GroovyTut {
     println("Matches " + primes.intersect([4,3,7]));
     println("Sort " + primes.sort());
     println("Last " + primes.pop());
+
+    // map
+    def paulMap = [
+      'name' : 'Paul',
+      'age' : 35,
+      'address' : '123 Main St',
+      'list' : [1, 2, 3]
+    ];
+    println("Name " + paulMap['name']);
+    println("List Item " + paulMap['list'][1]);
+
+    paulMap.put('city', 'Pittsburgh');
+    println("Has City " + paulMap.containsKey('city'));
+
+
+
   }
 }
