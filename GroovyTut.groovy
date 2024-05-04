@@ -91,5 +91,9 @@ class GroovyTut {
     def employee = ['Derek', 40, 6.25, [1,2,3]];
 
     println("2nd Number " + employee[3][1]);
+    println(primes);
+    println("Matches " + primes.intersect([4,3,7]));
+    println("Sort " + primes.sort());
+    println("Last " + primes.pop());
   }
 }
