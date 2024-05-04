@@ -144,7 +144,7 @@ class GroovyTut {
       println(j);
     }
 
-    def = [
+    def custs = [
       100 : "Paul",
       101 : "Sally",
       102 : "Sue"
@@ -154,5 +154,34 @@ class GroovyTut {
       println("$cust.value : $cust.key");
     }
 
+    // methods
+    sayHello();
+    //println("5 + 4 = " getSum(5,4));
+    def myName = "Derek";
+    passByValue(myName);
+    println("In Main " + myName);
+
+    // oop
+    def king = new Animal('King','Growl');
+    println("$king.name says $king.sound");
+    king.setSound('Grrrrrr');
+    println("$king.name says $king.sound");
+    king.run();
+    println(king.toString());
   }
+
+  static def sayHello() {
+    println("Hello");
+  }
+
+  static def getSum(num1=0, num2=0) {
+    return num1 + num2;
+  }
+
+  static def passByValue(name) {
+    name =  "In Function";
+    println("Name : " + name);
+  }
+
+
 }
