@@ -109,6 +109,13 @@ class GroovyTut {
     paulMap.put('city', 'Pittsburgh');
     println("Has City " + paulMap.containsKey('city'));
 
+    //range
+    def oneTo10 = 1..10;
+    def aToZ = 'a'..'z';
+
+    println(aToZ);
+    ptintln("Get First " + oneTo10.getFrom());
+
 
 
   }
